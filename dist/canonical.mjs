@@ -1,0 +1,3 @@
+var g=n=>Object.entries(n).map(([l,i])=>`${l}="${i}"`).join(" ");function f(n){return n.href!==null}var m=(n,l=!0)=>{let{urlTransformer:i,alternatives:c,domain:r,canonicalAttributes:e,url:t,altAttributesTransformer:s}=n,u=e?g(e):"",o=n.canonicalUrl??`${r+t}`;return l?[{tagName:"link",rel:"canonical",href:o,...e||{}},...c.map(a=>({tagName:"link",rel:"alternate",href:i({url:t,alternative:a,domain:r,canonicalUrl:o}),...s?s({url:t,alternative:a,domain:r}):{}})).filter(f)]:[`<link  rel="canonical"  href="${r+t}" ${u}>`,...c.map(a=>`<link rel="alternate" href="${i({url:t,alternative:a,domain:r,canonicalUrl:o})}" ${s?g(s({url:t,alternative:a,domain:r})):""} >`)].join(`
+`)};export{m as generateCanonicalLinks};
+//# sourceMappingURL=canonical.mjs.map

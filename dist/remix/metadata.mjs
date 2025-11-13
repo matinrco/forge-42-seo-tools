@@ -1,0 +1,2 @@
+var g=(r,i)=>{let{title:t,description:o,url:s,siteName:e,image:n,twitterCard:a="summary_large_image"}=r;return[{title:t},{property:"og:title",content:t},{property:"og:description",name:"description",content:o},{property:"og:url",content:s},{name:"twitter:card",property:"twitter:card",content:a},...e?[{name:"og:site_name",content:e}]:[],...n?[{property:"og:image",content:n}]:[],...i??[]]};export{g as generateMeta};
+//# sourceMappingURL=metadata.mjs.map

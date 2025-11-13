@@ -1,0 +1,2 @@
+"use strict";var r=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var n=Object.prototype.hasOwnProperty;var s=(t,e)=>{for(var a in e)r(t,a,{get:e[a],enumerable:!0})},x=(t,e,a,p)=>{if(e&&typeof e=="object"||typeof e=="function")for(let o of h(e))!n.call(t,o)&&o!==a&&r(t,o,{get:()=>e[o],enumerable:!(p=g(e,o))||p.enumerable});return t};var c=t=>x(r({},"__esModule",{value:!0}),t);var A={};s(A,{qa:()=>m});module.exports=c(A);var m=t=>({"@context":"https://schema.org",...t});0&&(module.exports={qa});
+//# sourceMappingURL=qa.js.map

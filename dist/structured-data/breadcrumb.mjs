@@ -1,0 +1,2 @@
+var m=(r,o)=>{let e=new URL(r),s=e.origin,n=e.pathname.split("/").filter(Boolean);return{"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:n.map((i,t)=>{let a=n.slice(0,t+1).join("/");return{"@type":"ListItem",position:t+1,name:o?.[t]||i,item:`${s}/${a}`}})}};export{m as breadcrumbs};
+//# sourceMappingURL=breadcrumb.mjs.map
